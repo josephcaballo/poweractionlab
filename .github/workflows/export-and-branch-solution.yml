@@ -19,14 +19,14 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        environment-url: 'https://joyotech.crm.dynamics.com/main.aspx?appid=a9f02600-045a-eb11-a812-002248047bc9&pagetype=entitylist&etn=almlab_timeoffrequest&viewid=48eca811-f7bc-4f26-b8f4-a786269bb9a4&viewType=1039'
+        environment-url: 'https://joyotech.crm.dynamics.com/'
         user-name: 'joyo'
         password-secret: ${{ secrets.password }}
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: 'https://joyotech.crm.dynamics.com/main.aspx?appid=a9f02600-045a-eb11-a812-002248047bc9&pagetype=entitylist&etn=almlab_timeoffrequest&viewid=48eca811-f7bc-4f26-b8f4-a786269bb9a4&viewType=1039'
+        environment-url: 'https://joyotech.crm.dynamics.com/'
         user-name: 'joyo'
         password-secret: ${{ secrets.password }}
         solution-name: ALMLab
